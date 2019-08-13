@@ -5,7 +5,6 @@ Repositório para a disciplina Algoritmos 2 dos cursos de Informática do Ifpi -
 1. [Ementa]
 2. [Objetivo Geral]
 3. [Objetivo Específico]
-4. [Apps]
 5. [Cronograma]
 6. [Exercicios]
 7. [Trabalhos]
@@ -33,7 +32,7 @@ Algoritmos; Funções e bibliotecas; Vetores, Matrizes e Dicionários; Arquivos;
 </div>
 <br/>
 
-Está disciplina tem como objetivo introduzir o aluno a conceitos, dispositivos, tecnologias e programação de sistemas para dispositivos móveis, entender as plataformas de desenvolvimento de aplicativos e aplicar o desenvolvimento de aplicativos em smartphones, tablets e outros dispositivos móveis. Entender as diferenças entre desenvolvimento móvel nativo e hibrido, vantagens e desvantagens de ambas as abordagens, frameworks utilizados no mercado, além de entender os conceitos de Progressive Web Apps.
+Compreender os conceitos e estruturas avançadas acerca dos algoritmos a fim desenvolver algoritmos com qualidade e eficiência para a solução de problemas do mundo real em nível computacional.
 
 ## Objetivo Específico
 ----
@@ -44,27 +43,12 @@ Está disciplina tem como objetivo introduzir o aluno a conceitos, dispositivos,
 </div>
 <br/>
 
-* Conhecer técnicas de programação para ambientes móveis.
-* Conhecer técnicas de programação para aplicativos híbridos.
-* Conhecer técnicas de programação para Progressive Web Apps.
-* Desenvolver protótipos e aplicativos funcionais utilizando as técnicas, tecnologias e conhecimentos adquiridos em sala.
-
-## Apps
-----
-
-<br/>
-<div align="right">
-    <b><a href="#indice">↥ Voltar para o indice</a></b>
-</div>
-<br/>
-
-**Projetos Maiores**
-* [tender] - 2019.1
-* [instagrando] - 2018.2
-* [cronefrix] - 2017.2
-
-**Iniciais**
-* [cadastro-aluno]
+* Dominar os conceitos avançados sobre algoritmos;
+* Identificar a importância da modularização em algoritmos
+* Identificar e determinar qual a melhor estrutura deve ser utilizada para solução de determinados problemas computacionais;
+* Conhecer as regras de sintaxe e semântica de uma linguagem de alto nível.
+* Identificar e utilizar as estruturas de dados convencionais e as estruturas de controle de fluxo que melhores se adaptam para a solução de um determinado problema.
+* Codificar programas fazendo uso da análise e projeto de tipos de dados.
 
 ## Cronograma
 ----
@@ -75,8 +59,10 @@ Está disciplina tem como objetivo introduzir o aluno a conceitos, dispositivos,
 </div>
 <br/>
 
-Data        |   Evento                  |   Atividade
----         |   ---                     |   ---
+Data        |   Atividade
+---         |   ---
+24/08       |   Lista 1 (Revisão)
+13/09       |   Lista 2 (Revisão)
 
 ## Exercicios
 ----
@@ -109,10 +95,13 @@ Data        |   Evento                  |   Atividade
 </div>
 <br/>
 
+**A definir**
+<!-- 
 * Lecheta, R.R., **[Google android: aprenda a criar aplicações para dispositivos móveis com o Android SDK.]** Novatec. 4ª Edição, 2015.
 * Pilone, D.; Pilone, T. **Use a cabeça!: desenvolvimento para iPhone.** Rio de Janeiro: Alta Books, 2011. xxxi, 517 p. (Use a cabeça) ISBN 978-85-7608-522-5.
 * Deitel, P.; Deitel, A.; Morgano, M. **[Android para programadores: Uma abordagem baseada em aplicativos.]** Porto Alegre: Bookman, 2013.
 * Lecheta, R. R. **[Google Android: aprenda a criar aplicações para dispositivos móveis com o Android SDK.]** 2ª ed., São Paulo : Novatec Editora, 2010
+-->
 
 **Os livros com links possuem exemplares na biblioteca do Campus Parnaíba, os demais encontram-se listados no PPC do curso.**
 
@@ -125,6 +114,8 @@ Data        |   Evento                  |   Atividade
 </div>
 <br/>
 
+**A definir**
+<!-- 
 **Documentação**
 * [Manifesto Reativo]
 * [Progressive Web App]
@@ -162,6 +153,7 @@ Data        |   Evento                  |   Atividade
 * [Firebase Authentication in Angular with AngularFire2]
 * [Google OAuth with @angular/fire]
 * [PWAs: The Future of Web Apps]
+-->
 
 
 ## Contributing
