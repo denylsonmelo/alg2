@@ -235,3 +235,11 @@ aulas
         confirm
         ReferenceError
         SyntexError
+    13/08
+        require
+        readFileSync
+        split
+        shift
+        parseInt
+        parseFloat
+        readline-sync
