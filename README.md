@@ -63,6 +63,7 @@ Data        |   Atividade
 ---         |   ---
 24/08       |   Lista 1 (Revisão)
 13/09       |   Lista 2 (Revisão)
+05/10       |   Lista 3 (Revisão)
 
 ## Exercicios
 ----
