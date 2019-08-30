@@ -1,18 +1,21 @@
 # Algoritmos 2
+
 Repositório para a disciplina Algoritmos 2 dos cursos de Informática do Ifpi - Campus Parnaíba.
 
 ## Indice
+
 1. [Ementa]
 2. [Objetivo Geral]
 3. [Objetivo Específico]
-5. [Cronograma]
-6. [Exercicios]
-7. [Trabalhos]
-8. [Bibliografia]
-9. [Extras]
-10. [Contributing]
+4. [Cronograma]
+5. [Exercicios]
+6. [Trabalhos]
+7. [Bibliografia]
+8. [Extras]
+9. [Contributing]
 
 ## Ementa
+
 ----
 
 <br/>
@@ -24,6 +27,7 @@ Repositório para a disciplina Algoritmos 2 dos cursos de Informática do Ifpi -
 Algoritmos; Funções e bibliotecas; Vetores, Matrizes e Dicionários; Arquivos; Análise e projeto dos tipos de dados abstratos.
 
 ## Objetivo Geral
+
 ----
 
 <br/>
@@ -35,6 +39,7 @@ Algoritmos; Funções e bibliotecas; Vetores, Matrizes e Dicionários; Arquivos;
 Compreender os conceitos e estruturas avançadas acerca dos algoritmos a fim desenvolver algoritmos com qualidade e eficiência para a solução de problemas do mundo real em nível computacional.
 
 ## Objetivo Específico
+
 ----
 
 <br/>
@@ -51,6 +56,7 @@ Compreender os conceitos e estruturas avançadas acerca dos algoritmos a fim des
 * Codificar programas fazendo uso da análise e projeto de tipos de dados.
 
 ## Cronograma
+
 ----
 
 <br/>
@@ -66,6 +72,7 @@ Data        |   Atividade
 05/10       |   Lista 3 (Revisão)
 
 ## Exercicios
+
 ----
 
 <br/>
@@ -74,9 +81,10 @@ Data        |   Atividade
 </div>
 <br/>
 
-**A definir**
+### A definir
 
 ## Trabalhos
+
 ----
 
 <br/>
@@ -85,9 +93,10 @@ Data        |   Atividade
 </div>
 <br/>
 
-**A definir**
+### A definir
 
 ## Bibliografia
+
 ----
 
 <br/>
@@ -96,12 +105,12 @@ Data        |   Atividade
 </div>
 <br/>
 
-**A definir**
+### A definir
 
 * BENEDUZZI, Humberto Martins; METZ, João Ariberto. Lógica e linguagem de programação: introdução ao desenvolvimento de software. Curitiba: LT, 2010.
 * LEISERSON C. ,RIVEST L., CORMEM T., RIVEST R., STEIN C., Algoritmos - Teoria e Pratica. Editora Campus, 2ª. Edição, 2002.
 * MENEZES, Nilo Ney Coutinho. Introdução à Programação com Python - Algoritmos e Lógica de Programação para Iniciantes. 1ª Ed. São Paulo: Novatec, 2010.
-* LAGES, N.; GUIMARÃES, A. Algoritmos e estruturas de dados. LTC, 2008. 
+* LAGES, N.; GUIMARÃES, A. Algoritmos e estruturas de dados. LTC, 2008.
 * BARRY, Paul. Use a cabeça! Python. Alta Books, 2013.
 * ZIVIANI N. Projeto de Algoritmos com Implementações em Java e C++. Editora Cengage Learning, 3ª Edição, 2006
 * FORBELLONE, A. L. V. & EBERSPACHER, H. F. Lógica de Programação: a Construção de Algoritmos e estruturas de Dados. Makron Books, 3ª Edição, 2005. 232p.
@@ -119,6 +128,7 @@ Data        |   Atividade
 **Os livros com links possuem exemplares na biblioteca do Campus Parnaíba, os demais encontram-se listados no PPC do curso.**
 
 ## Extras
+
 ----
 
 <br/>
@@ -127,7 +137,8 @@ Data        |   Atividade
 </div>
 <br/>
 
-**A definir**
+### A definir
+
 <!-- 
 **Documentação**
 * [Manifesto Reativo]
@@ -168,8 +179,8 @@ Data        |   Atividade
 * [PWAs: The Future of Web Apps]
 -->
 
-
 ## Contributing
+
 ----
 
 <br/>
@@ -185,7 +196,6 @@ Sinta-se livre para sugerir melhorias, materiais e outras contribuições via Is
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Crie um novo _Pull Request_
-
 
 [Ementa]: #ementa
 [Objetivo Geral]: #objetivo-geral
@@ -246,7 +256,7 @@ aulas
         prompt
         confirm
         ReferenceError
-        SyntexError
+        SyntaxError
     13/08
         require
         readFileSync
