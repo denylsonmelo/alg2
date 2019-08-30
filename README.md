@@ -105,25 +105,16 @@ Data        |   Atividade
 </div>
 <br/>
 
-### A definir
-
-* BENEDUZZI, Humberto Martins; METZ, João Ariberto. Lógica e linguagem de programação: introdução ao desenvolvimento de software. Curitiba: LT, 2010.
-* LEISERSON C. ,RIVEST L., CORMEM T., RIVEST R., STEIN C., Algoritmos - Teoria e Pratica. Editora Campus, 2ª. Edição, 2002.
-* MENEZES, Nilo Ney Coutinho. Introdução à Programação com Python - Algoritmos e Lógica de Programação para Iniciantes. 1ª Ed. São Paulo: Novatec, 2010.
-* LAGES, N.; GUIMARÃES, A. Algoritmos e estruturas de dados. LTC, 2008.
-* BARRY, Paul. Use a cabeça! Python. Alta Books, 2013.
-* ZIVIANI N. Projeto de Algoritmos com Implementações em Java e C++. Editora Cengage Learning, 3ª Edição, 2006
-* FORBELLONE, A. L. V. & EBERSPACHER, H. F. Lógica de Programação: a Construção de Algoritmos e estruturas de Dados. Makron Books, 3ª Edição, 2005. 232p.
-* XAVIER, Gley Fabiano. Lógica de Programação. Ed. SENAC, 1ª Edição, 2001. 392p.
-* TREMBLAY, Jean Paul e RICHARD, B. Bunt. Ciências dos Computadores, Uma Abordagem Algorítmica. Ed. McGraw Hill.
-* VILARIM, Gilvan. Algoritmos: Programação para Iniciantes. 1. ed. Ciência Moderna, 2004.
-
-<!-- 
-* Lecheta, R.R., **[Google android: aprenda a criar aplicações para dispositivos móveis com o Android SDK.]** Novatec. 4ª Edição, 2015.
-* Pilone, D.; Pilone, T. **Use a cabeça!: desenvolvimento para iPhone.** Rio de Janeiro: Alta Books, 2011. xxxi, 517 p. (Use a cabeça) ISBN 978-85-7608-522-5.
-* Deitel, P.; Deitel, A.; Morgano, M. **[Android para programadores: Uma abordagem baseada em aplicativos.]** Porto Alegre: Bookman, 2013.
-* Lecheta, R. R. **[Google Android: aprenda a criar aplicações para dispositivos móveis com o Android SDK.]** 2ª ed., São Paulo : Novatec Editora, 2010
--->
+* BENEDUZZI, Humberto Martins; METZ, João Ariberto. **[Lógica e linguagem de programação: introdução ao desenvolvimento de software.]** Curitiba: LT, 2010.
+* LEISERSON C. ,RIVEST L., CORMEM T., RIVEST R., STEIN C., **[Algoritmos - Teoria e Pratica.]** Editora Campus, 2ª. Edição, 2002.
+* MENEZES, Nilo Ney Coutinho. **[Introdução à Programação com Python - Algoritmos e Lógica de Programação para Iniciantes.]** 1ª Ed. São Paulo: Novatec, 2010.
+* LAGES, N.; GUIMARÃES, A. **[Algoritmos e estruturas de dados.]** LTC, 2008.
+* BARRY, Paul. **[Use a cabeça! Python.]** Alta Books, 2013.
+* ZIVIANI N. **[Projeto de Algoritmos com Implementações em Java e C++.]** Editora Cengage Learning, 3ª Edição, 2006
+* FORBELLONE, A. L. V. & EBERSPACHER, H. F. **[Lógica de Programação: a Construção de Algoritmos e estruturas de Dados.]** Makron Books, 3ª Edição, 2005. 232p.
+* XAVIER, Gley Fabiano. **[Lógica de Programação.]** Ed. SENAC, 1ª Edição, 2001. 392p.
+* TREMBLAY, Jean Paul e RICHARD, B. Bunt. **[Ciências dos Computadores, Uma Abordagem Algorítmica.]** Ed. McGraw Hill.
+* VILARIM, Gilvan. **[Algoritmos: Programação para Iniciantes.]** 1. ed. Ciência Moderna, 2004.
 
 **Os livros com links possuem exemplares na biblioteca do Campus Parnaíba, os demais encontram-se listados no PPC do curso.**
 
