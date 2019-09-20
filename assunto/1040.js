@@ -1,53 +1,31 @@
-// escolherTerminal
-// lerAlinhaInteira
-// quebrarString
-// pegarPrimeiroValorArray
-// converterStringFloat
-// mediaPonderada
-// situacaoAlunoRegular
-// situacaoAlunoFinal
-// imprimir
+var entrada = escolherTerminal();
 
-var entrada = require('readline-sync');
+var valoresLidos = quebrarString(lerAlinhaInteira(entrada), ' ');
 
-var valoresLidos = entrada.question().split(' ');
-
-var nota1 = parseFloat(valoresLidos.shift());
-var nota2 = parseFloat(valoresLidos.shift());
-var nota3 = parseFloat(valoresLidos.shift());
-var nota4 = parseFloat(valoresLidos.shift());
+var nota1 = converterStringFloat(pegarPrimeiroValorArray(valoresLidos));
+var nota2 = converterStringFloat(pegarPrimeiroValorArray(valoresLidos));
+var nota3 = converterStringFloat(pegarPrimeiroValorArray(valoresLidos));
+var nota4 = converterStringFloat(pegarPrimeiroValorArray(valoresLidos));
 
 var peso1 = 2,
     peso2 = 3,
     peso3 = 4,
     peso4 = 1;
-var somaPesos = peso1 + peso2 + peso3 + peso4;
 
-var media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3 + nota4 * peso4) / somaPesos;
-media = media.toFixed(1);
+var media = calcularMediaPonderada(nota1, nota2 , nota3, nota4, peso1, peso2, peso3, peso4);
+media = arredondar1Casa(media);
 
-console.log('Media: ' + media);
+imprimir('Media: ' + media);
 
-if (media >= 7) {
-    console.log('Aluno aprovado.');
-} else if (media < 5) {
-    console.log('Aluno reprovado.');
-} else if (media >= 5 && media <= 6.9) {
-    console.log('Aluno em exame.');
+var situacao = verificarSituacaoAlunoRegular(media);
+imprimir(situacao);
 
-    var notaExame = parseFloat(entrada.question());
+if(situacao === 'Aluno em exame.'){
+    var nota = converterStringFloat(lerAlinhaInteira(entrada));
+    imprimir('Nota do exame: ' + nota);
+       
+    media = arredondar1Casa(calcularMediaAritmetica(nota, media));
 
-    console.log('Nota do exame: ' + notaExame);
-
-    media = (media + notaExame) / 2;
-    media = media.toFixed(1);
-
-    if (media >= 5) {
-        console.log('Aluno aprovado.');
-    } else if (media <= 4.9) {
-        console.log('Aluno reprovado.');
-    }
-    
-    console.log('Media final: ' + media);
-    
+    imprimir(verificarSituacaoAlunoFinal(media));
+    imprimir('Media final: ' + media);
 }
