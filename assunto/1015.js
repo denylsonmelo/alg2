@@ -2,17 +2,22 @@
 //   ['faltou', 'luz', 'de', 'tarde'] 
 
 //   quebrarString(' ', "faltou luz de tarde")
-var entrada = escolherTerminal();
+var terminal = require('./../biblioteca/terminal');
+var strings = require('./../biblioteca/strings');
+var matematica = require('./../biblioteca/matematica');
+var arrays = require('./../biblioteca/arrays');
 
-var valoresLidosLinha1 = quebrarString(lerALinhaInteira(entrada), ' ');
-var valoresLidosLinha2 = quebrarString(lerALinhaInteira(entrada), ' ');
+var entrada = terminal.escolherTerminal();
 
-var x1 = converterStringParaFloat(pegarPrimeiroValorArray(valoresLidosLinha1));
-var y1 = converterStringParaFloat(pegarPrimeiroValorArray(valoresLidosLinha1));
+var valoresLidosLinha1 = strings.quebrarString(terminal.lerALinhaInteira(entrada), ' ');
+var valoresLidosLinha2 = strings.quebrarString(terminal.lerALinhaInteira(entrada), ' ');
 
-var x2 = converterStringParaFloat(pegarPrimeiroValorArray(valoresLidosLinha2));
-var y2 = converterStringParaFloat(pegarPrimeiroValorArray(valoresLidosLinha2));
+var x1 = strings.converterStringParaFloat(arrays.pegarPrimeiroValorArray(valoresLidosLinha1));
+var y1 = strings.converterStringParaFloat(arrays.pegarPrimeiroValorArray(valoresLidosLinha1));
 
-var distancia = calcularDistanciaEntreDoisPontos(x1, y1, x2, y2);
+var x2 = strings.converterStringParaFloat(arrays.pegarPrimeiroValorArray(valoresLidosLinha2));
+var y2 = strings.converterStringParaFloat(arrays.pegarPrimeiroValorArray(valoresLidosLinha2));
 
-imprimir(distancia.toFixed(4));
+var distancia = matematica.calcularDistanciaEntreDoisPontos(x1, y1, x2, y2);
+
+terminal.imprimir(distancia.toFixed(4));

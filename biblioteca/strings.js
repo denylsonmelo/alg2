@@ -1,11 +1,11 @@
-function converterStringParaInteiro(valor){
+exports.converterStringParaInteiro = function (valor) {
     return parseInt(valor);
 }
 
-function converterStringParaFloat(valor){
+exports.converterStringParaFloat = function(valor) {
     return parseFloat(valor);
 }
 
-function quebrarString(string, cadeia){
+exports.quebrarString = function(string, cadeia) {
     return string.split(cadeia);
 }

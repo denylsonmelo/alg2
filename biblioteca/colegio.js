@@ -1,4 +1,4 @@
-function verificarSituacaoAlunoRegular(media){
+exports.verificarSituacaoAlunoRegular = function(media){
     if(media >= 7){
         return 'Aluno aprovado.';
     } else if(media < 5) {
@@ -8,7 +8,7 @@ function verificarSituacaoAlunoRegular(media){
     }
 }
 
-function verificarSituacaoAlunoFinal(media){
+exports.verificarSituacaoAlunoFinal = function(media){
     if (media >= 5) {
         return 'Aluno aprovado.';
     } else if (media <= 4.9) {
