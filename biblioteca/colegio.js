@@ -1,3 +1,12 @@
+exports.imprimirBoletim = function(alunos, notas){
+    console.log('imprimindo .....');
+
+    console.log(` - Alunos -------- Notas`);
+    for(var i=0; i < alunos.length; i++){
+        console.log(` - ${alunos[i]} -------- ${notas[i]}`);
+    }
+}
+
 exports.verificarSituacaoAlunoRegular = function(media){
     if(media >= 7){
         return 'Aluno aprovado.';

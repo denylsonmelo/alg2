@@ -14,5 +14,5 @@ exports.helloWorld = function (nome) {
 }
 
 exports.imprimir = function (mensagem) {
-  console.log(mensagem);
+  console.error(mensagem);
 }
