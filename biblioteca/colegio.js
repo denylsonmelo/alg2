@@ -1,10 +1,15 @@
-exports.imprimirBoletim = function(alunos, notas){
+exports.imprimirBoletim = function(alunos, bimestre1, bimestre2){
     console.log('imprimindo .....');
 
-    console.log(` - Alunos -------- Notas`);
+    console.log('\t_________________________________________')
+    console.log(`\t|  Alunos\t-----\tBim 1\t-----\tBim 2\t-----\tMedia  |`);
+    console.log('\t_________________________________________')
+    var media = 0;
     for(var i=0; i < alunos.length; i++){
-        console.log(` - ${alunos[i]} -------- ${notas[i]}`);
+        media = (bimestre1[i] + bimestre2[i])/2;
+        console.log(`\t|  ${alunos[i]}\t-----\t${bimestre1[i]}\t-----\t${bimestre2[i]}\t-----\t${media}  |`);
     }
+    console.log('\t_________________________________________')
 }
 
 exports.verificarSituacaoAlunoRegular = function(media){

@@ -2,8 +2,10 @@ var terminal = require('./../biblioteca/terminal');
 var strings = require('./../biblioteca/strings');
 var colegio = require('./../biblioteca/colegio');
 
-const qtdAlunos = 10;
-var nome = new Array(qtdAlunos), nota = new Array(qtdAlunos);
+const qtdAlunos = 2;
+var nome = new Array(qtdAlunos), 
+    bimestre1 = new Array(qtdAlunos),
+    bimestre2 = new Array(qtdAlunos);
 
 var entrada = terminal.escolherTerminal();
 
@@ -13,14 +15,18 @@ for(var i = 0; i < nome.length ; i++){
     nome[i] = terminal.lerALinhaInteira(entrada);
 }
 
-terminal.imprimir('por favor informe a nota dos alunos da turma: ');
+terminal.imprimir('por favor informe a nota do bimestre 1 dos alunos da turma: ');
 for(var i = 0; i < nome.length ; i++){
     terminal.imprimir(`Nota do "${nome[i]}": `);
-    nota[i] = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
+    bimestre1[i] = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
 
 }
 
-console.log(nome);
-console.log(nota);
+terminal.imprimir('por favor informe a nota do bimestre 2 dos alunos da turma: ');
+for(var i = 0; i < nome.length ; i++){
+    terminal.imprimir(`Nota do "${nome[i]}": `);
+    bimestre2[i] = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
 
-colegio.imprimirBoletim(nome, nota);
+}
+
+colegio.imprimirBoletim(nome, bimestre1, bimestre2);
