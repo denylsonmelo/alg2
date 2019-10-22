@@ -1,39 +1,26 @@
-var terminal = require('./../biblioteca/terminal');
-var strings = require('./../biblioteca/strings');
-var colegio = require('./../biblioteca/colegio');
+const terminal = require('./../biblioteca/terminal');
+const strings = require('./../biblioteca/strings');
+const colegio = require('./../biblioteca/colegio');
 
 const qtdAlunos = 2;
 
-var nome = new Array(qtdAlunos),
-    bimestre1 = new Array(qtdAlunos),
-    bimestre2 = new Array(qtdAlunos);
+const alunos = [];
 
-var alunos = [
-    nome, // ['aluno1', 'aluno2']
-    bimestre1, // [ 2 , 3 ]
-    bimestre2  // [ 4 , 6 ]
-];
+const entrada = terminal.escolherTerminal();
 
-var entrada = terminal.escolherTerminal();
+for(let i = 0; i < qtdAlunos; i ++){
+    terminal.imprimir('por favor informe o nome do aluno: ');
+    let nome = terminal.lerALinhaInteira(entrada);
+    
+    terminal.imprimir('por favor informe a nota do bimestre 1: ');
+    let bimestre1 = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
+    
+    terminal.imprimir('por favor informe a nota do bimestre 2: ');
+    let bimestre2 = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
+    
+    let aluno = [nome, bimestre1, bimestre2];
 
-terminal.imprimir('por favor informe o nome dos alunos da turma: ');
-for (var linha = 0; linha < nome.length; linha++) {
-    terminal.imprimir(`Nome do aluno ${linha+1}: `);
-    nome[linha] = terminal.lerALinhaInteira(entrada);
-}
-
-terminal.imprimir('por favor informe a nota do bimestre 1 dos alunos da turma: ');
-for (var linha = 0; linha < nome.length; linha++) {
-    terminal.imprimir(`Nota do "${nome[linha]}": `);
-    bimestre1[linha] = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
-
-}
-
-terminal.imprimir('por favor informe a nota do bimestre 2 dos alunos da turma: ');
-for (var linha = 0; linha < nome.length; linha++) {
-    terminal.imprimir(`Nota do "${nome[linha]}": `);
-    bimestre2[linha] = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
-
+    alunos.push(aluno);
 }
 
 colegio.imprimirBoletim(alunos);

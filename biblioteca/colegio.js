@@ -13,8 +13,9 @@ exports.imprimirBoletim = function (alunos) {
     // aluno1 , 2, 4
 
     for (var i = 0; i < alunos.length; i++) {
-        for (var j = 0; j < alunos[i].length; j++) {
-            media = (alunos[i][j] + alunos[i][j]) / 2;
+        aluno = alunos[i];
+        for (var j = 0; j < aluno.length; j++) {
+            media = (aluno[j] + alunos[i][j]) / 2;
             console.log(`\t|  ${alunos[i][j]}\t-----\t${alunos[i+1][j]}\t-----\t${alunos[i+2][j]}\t-----\t${media}  |`);
         }
     }
