@@ -13,12 +13,12 @@ for(let i = 0; i < qtdAlunos; i ++){
     let nome = terminal.lerALinhaInteira(entrada);
     
     terminal.imprimir('por favor informe a nota do bimestre 1: ');
-    let bimestre1 = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
+    let nota1 = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
     
     terminal.imprimir('por favor informe a nota do bimestre 2: ');
-    let bimestre2 = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
+    let nota2 = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
     
-    let aluno = [nome, bimestre1, bimestre2];
+    let aluno = [nome, nota1, nota2];
 
     alunos.push(aluno);
 }
