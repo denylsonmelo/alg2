@@ -18,7 +18,7 @@ for(let i = 0; i < qtdAlunos; i ++){
     terminal.imprimir('por favor informe a nota do bimestre 2: ');
     let nota2 = strings.converterStringParaFloat(terminal.lerALinhaInteira(entrada));
     
-    let aluno = [nome, nota1, nota2];
+    let aluno = [idAluno, nome, nota1, nota2];
 
     alunos.push(aluno);
 }
