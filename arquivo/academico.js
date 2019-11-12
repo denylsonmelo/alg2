@@ -1,6 +1,6 @@
-function carregarDados(string){
+function carregarDados(string) {
     //string = Buffer.from(string, 'base64').toString()
-    const linhas = strings.quebrarString(string, '\n'); 
+    const linhas = strings.quebrarString(string, '\n');
     const primeiraLinha = strings.quebrarString(linhas[0], ';');
 
     const qtdAlunos = strings.converterStringParaInteiro(primeiraLinha[0]);
@@ -9,31 +9,34 @@ function carregarDados(string){
     let aluno;
     const alunos = [];
 
-    for(let i =1; i<= qtdAlunos; i++){
-        aluno = strings.quebrarString(linhas[i], ';'); 
+    for (let i = 1; i <= qtdAlunos; i++) {
+        aluno = strings.quebrarString(linhas[i], ';');
         alunos.push(aluno);
     }
 
-    
+
     let materia;
     const materias = [];
-    
-    for(let i = (qtdAlunos+1); i <= (qtdMaterias + qtdAlunos); i++){
+
+    for (let i = (qtdAlunos + 1); i <= (qtdMaterias + qtdAlunos); i++) {
         materia = strings.quebrarString(linhas[i], ';');
         materias.push(materia);
     }
 
-    return {alunos, materias}; // JSON
+    return {
+        alunos,
+        materias
+    }; // JSON
 }
 
-function prepararDadosSalvar(alunos, materias){
+function prepararDadosSalvar(alunos, materias) {
     let dados = `${alunos.length};${materias.length}\n`;
 
-    for(let i = 0; i< alunos.length; i++){
+    for (let i = 0; i < alunos.length; i++) {
         dados = dados.concat(`${alunos[i]}\n`);
     }
 
-    for(let i = 0; i < materias.length; i++){
+    for (let i = 0; i < materias.length; i++) {
         dados = dados.concat(`${materias[i]}\n`);
     }
     dados = dados.split(',').join(';');
@@ -41,12 +44,20 @@ function prepararDadosSalvar(alunos, materias){
     return dados;
 }
 
+function menuInicial() {
+    console.log('\t--------------\n\t  menu fodao\t\n\t--------------\n\t  1 - Alunos\n\t  2 - Materias\n\t  9 - Sair\n \t--------------')
+}
+
+function limparTela(){
+    console.log('\n\n\n\n\n\n\n\n\n\n');
+}
+
 const terminal = require('./../biblioteca/terminal');
 const strings = require('./../biblioteca/strings');
 const colegio = require('./../biblioteca/colegio');
 
 const fs = require('fs');
-const localArquivo ='arquivo/bd';
+const localArquivo = 'arquivo/bd';
 
 //const entrada = terminal.escolherTerminal();
 //terminal.lerALinhaInteira(entrada)
@@ -55,10 +66,31 @@ const dados = carregarDados(bd);
 const alunos = dados.alunos;
 const materias = dados.materias;
 
-//alunos.push([7, 'novo nome', 4.5, 6]);
 // processamento
 
+const entrada = terminal.escolherTerminal();
+
+let escolhaUsuario = '';
+for(;escolhaUsuario !== '9';){
+    limparTela();
+    menuInicial();
+    escolhaUsuario = terminal.lerALinhaInteira(entrada);
+
+    switch (escolhaUsuario) {
+        case '1':
+            console.log('1 do usuario')    
+            break;
+        case '2':
+            console.log('2 do usuario')
+            break;
+        case '9':
+            break;
+        default:
+            console.log('opcao invalida')
+            break;
+    }
+}
+    
 
 const dadosPreparados = prepararDadosSalvar(alunos, materias);
-fs.writeFileSync(localArquivo, dadosPreparados,'utf-8');
-
+fs.writeFileSync('arquivo/bd', dadosPreparados, 'utf-8');
