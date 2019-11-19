@@ -45,11 +45,19 @@ function prepararDadosSalvar(alunos, materias) {
 }
 
 function menuInicial() {
-    console.log('\t--------------\n\t  menu fodao\t\n\t--------------\n\t  1 - Alunos\n\t  2 - Materias\n\t  9 - Sair\n \t--------------')
+    console.log('\t--------------\n\t  menu inicial\t\n\t--------------\n\t  1 - Alunos\n\t  2 - Materias\n\t  3 - Lancar Notas\n\t  4 - Gerar Resultado Final\n\t  9 - Sair\n \t--------------')
+}
+
+function menuAlunos() {
+    return '\t--------------\n\t  menu alunos\t\n\t--------------\n\t  1 - Listar\n\t  2 - Cadastrar\n\t  9 - Voltar\n \t--------------';
 }
 
 function limparTela(){
     console.log('\n\n\n\n\n\n\n\n\n\n');
+}
+
+function exibir(mensagem){
+    console.log(mensagem);
 }
 
 const terminal = require('./../biblioteca/terminal');
@@ -71,22 +79,31 @@ const materias = dados.materias;
 const entrada = terminal.escolherTerminal();
 
 let escolhaUsuario = '';
+let mensagem = '';
 for(;escolhaUsuario !== '9';){
     limparTela();
+    exibir(mensagem);
     menuInicial();
     escolhaUsuario = terminal.lerALinhaInteira(entrada);
 
     switch (escolhaUsuario) {
         case '1':
-            console.log('1 do usuario')    
+            mensagem = menuAlunos();
             break;
         case '2':
-            console.log('2 do usuario')
+            mensagem = 'opcao ainda nao disponivel';
+            break;
+        case '3':
+            mensagem = 'opcao ainda nao disponivel';
+            break;
+        case '4':
+            colegio.imprimirBoletim(alunos);
+            mensagem = '';
             break;
         case '9':
             break;
         default:
-            console.log('opcao invalida')
+            mensagem = 'opcao invalida';
             break;
     }
 }
